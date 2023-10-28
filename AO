@@ -1,0 +1,153 @@
+Output of the commands practiced
+1. ls - 
+Desktop  Documents  Downloads  Music  Pictures  Public  Sublimetext  Sublimetext.C  Sublimetext.cpp  Sublimetextc  Sublimetextcpp  Templates  Videos  helloworld.c  helloworld.c++  helloworld.cpp  helloworldC  helloworldCPP 
+2. ls -a -
+.              .Xauthority   .bashrc.original  .dmrc       .gitconfig  .local    .sudo_as_admin_successful  .xsession-errors.old  Desktop    Music     Sublimetext      Sublimetextc    Videos          helloworld.cpp
+..             .bash_logout  .cache            .face       .gnupg      .mozilla  .viminfo                   .zsh_history          Documents  Pictures  Sublimetext.C    Sublimetextcpp  helloworld.c    helloworldC
+.ICEauthority  .bashrc       .config           .face.icon  .java       .profile  .xsession-errors           .zshrc                Downloads  Public    Sublimetext.cpp  Templates       helloworld.c++  helloworldCPP                                
+3. ls -c - 
+Desktop  Sublimetextcpp  Sublimetext  Sublimetext.cpp  Sublimetextc  Sublimetext.C  helloworldCPP  helloworld.cpp  helloworld.c++  helloworldC  helloworld.c  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+4. cd Downloads - 
+(reemt㉿kali)-[~/Downloads]                                                  
+5. cd .. - 
+(reemt㉿kali)-[~]                   
+6. locate rockyou.txt -
+/usr/share/wordlists/rockyou.txt.gz
+7. locate rockyou.txt - 
+/usr/share/wordlists/rockyou.txt
+8. basename /usr/share/wordlists/rockyou.txt - 
+rockyou.txt 
+9. dirname /usr/share/wordlists/rockyou.txt - 
+/usr/share/wordlists
+10. type ls - 
+ls is an alias for ls --color=auto
+11. which ls - 
+ls: aliased to ls --color=auto
+12. Whoami - 
+reemt
+13. alias - 
+diff='diff --color=auto'
+egrep='egrep --color=auto'
+fgrep='fgrep --color=auto'
+grep='grep --color=auto'
+history='history 0'
+ip='ip --color=auto'
+l='ls -CF'
+la='ls -A'
+ll='ls -l'
+ls='ls --color=auto'
+which-command=whence
+14. Sudo - 
+[sudo] password for reemt: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  gimp-data libamd3 libbabl-0.1-0 libcamd3 libccolamd3 libcholmod4 libcolamd3 libgegl-0.4-0 libgegl-common libgexiv2-2 libgimp2.0 libmng1 libmypaint-1.5-1 libmypaint-common libraw23 libsuitesparseconfig7 libumfpack6 libwmf-0.2-7
+  libwmflite-0.2-7
+Suggested packages:
+  gimp-help-en | gimp-help gimp-data-extras libwmf-0.2-7-gtk
+The following NEW packages will be installed:
+  gimp gimp-data libamd3 libbabl-0.1-0 libcamd3 libccolamd3 libcholmod4 libcolamd3 libgegl-0.4-0 libgegl-common libgexiv2-2 libgimp2.0 libmng1 libmypaint-1.5-1 libmypaint-common libraw23 libsuitesparseconfig7 libumfpack6 libwmf-0.2-7
+The following packages will be upgraded:
+  libwmflite-0.2-7
+1 upgraded, 19 newly installed, 0 to remove and 894 not upgraded.
+Need to get 23.1 MB of archives.
+After this operation, 139 MB of additional disk space will be used.
+Do you want to continue? [Y/n] n
+15. shutdown 12:50 -
+shutdown 12:50       
+Shutdown scheduled for Sat 2023-10-28 12:50:00 EDT, use 'shutdown -c' to cancel.
+16. shutdown -c -
+(reemt㉿kali)-[~]
+17. echo - 
+echo "cool message"                                                                                          
+cool message
+18. ps - 
+ps     
+    PID TTY          TIME CMD
+ 195496 pts/1    00:00:04 zsh
+ 221887 pts/1    00:00:00 ps
+19. which python -       
+/usr/bin/python
+20. which brave - 
+brave not found
+21. mv -
+ mv Linuxtex ~/Documents/file.txt
+22. du | head - 
+4       ./.mozilla/firefox/Pending Pings
+4       ./.mozilla/firefox/8gc24y4c.default-esr/minidumps
+8       ./.mozilla/firefox/8gc24y4c.default-esr/datareporting/glean/db
+4       ./.mozilla/firefox/8gc24y4c.default-esr/datareporting/glean/pending_pings
+4       ./.mozilla/firefox/8gc24y4c.default-esr/datareporting/glean/events
+20      ./.mozilla/firefox/8gc24y4c.default-esr/datareporting/glean
+32      ./.mozilla/firefox/8gc24y4c.default-esr/datareporting
+4       ./.mozilla/firefox/8gc24y4c.default-esr/crashes/events
+8       ./.mozilla/firefox/8gc24y4c.default-esr/crashes
+4       ./.mozilla/firefox/8gc24y4c.default-esr/security_state
+23. du | tail -
+8       ./.config/gedit
+8       ./.config/gtk-3.0
+332     ./.config
+4       ./Public
+4       ./Templates
+4       ./Documents
+4       ./Pictures
+4       ./Music
+4       ./Videos
+57732   .
+24. hostname - 
+kali
+25. ipaddr -
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host proto kernel_lo 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:0c:29:18:60:c7 brd ff:ff:ff:ff:ff:ff
+    inet 172.16.255.128/24 brd 172.16.255.255 scope global dynamic noprefixroute eth0
+       valid_lft 1752sec preferred_lft 1752sec
+    inet6 fe80::20c:29ff:fe18:60c7/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+26. passwd -   
+Changing password for reemt.
+Current password: 
+27. whatis cat - 
+cat (1)              - concatenate files and print on the standard output
+28. ls -l
+total 128
+drwxr-xr-x 3 reemt reemt  4096 Oct 27 21:52 Desktop
+drwxr-xr-x 2 reemt reemt  4096 Oct 27 23:26 Documents
+drwxr-xr-x 3 reemt reemt  4096 Oct 27 22:52 Downloads
+drwxr-xr-x 2 reemt reemt  4096 Oct 17 13:33 Music
+drwxr-xr-x 2 reemt reemt  4096 Oct 17 13:33 Pictures
+drwxr-xr-x 2 reemt reemt  4096 Oct 17 13:33 Public
+-rwxr-xr-x 1 reemt reemt 70448 Oct 27 16:20 Sublimetext
+-rw-r--r-- 1 reemt reemt   117 Oct 27 16:16 Sublimetext.C
+-rw-r--r-- 1 reemt reemt   117 Oct 27 16:19 Sublimetext.cpp
+-rwxr-xr-x 1 reemt reemt 70440 Oct 27 16:19 Sublimetextc
+-rwxr-xr-x 1 reemt reemt 70448 Oct 27 16:21 Sublimetextcpp
+drwxr-xr-x 2 reemt reemt  4096 Oct 17 13:33 Templates
+drwxr-xr-x 2 reemt reemt  4096 Oct 17 13:33 Videos
+-rw-r--r-- 1 reemt reemt   118 Oct 27 16:09 helloworld.c
+-rw-r--r-- 1 reemt reemt     0 Oct 27 16:11 helloworld.c++
+-rw-r--r-- 1 reemt reemt   118 Oct 27 16:12 helloworld.cpp
+-rwxr-xr-x 1 reemt reemt 70440 Oct 27 16:10 helloworldC
+-rwxr-xr-x 1 reemt reemt 70448 Oct 27 16:13 helloworldCPP
+29. whereis sudo 
+sudo: /usr/bin/sudo /usr/libexec/sudo /usr/share/man/man8/sudo.8.gz
+30. df -T -
+Filesystem     Type     1K-blocks     Used Available Use% Mounted on
+udev           devtmpfs   1941396        0   1941396   0% /dev
+tmpfs          tmpfs       401552     1172    400380   1% /run
+/dev/nvme0n1p2 ext4      29285264 11832572  15939732  43% /
+tmpfs          tmpfs      2007748        0   2007748   0% /dev/shm
+tmpfs          tmpfs         5120        0      5120   0% /run/lock
+/dev/nvme0n1p1 vfat        524008      160    523848   1% /boot/efi
+tmpfs          tmpfs       401548      124    401424   1% /run/user/1000
+
+
+
+                                                                                                 
